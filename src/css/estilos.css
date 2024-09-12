@@ -1,0 +1,105 @@
+html{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(../images/bg-desktop.svg) no-repeat center;
+    width: 100%;
+    max-height: 1080px;
+    max-width: 1920px;
+    background-size: cover;
+    color: white;
+    content: '';
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+header .huddle{
+    display: flex;
+    margin-top: 190px;
+    margin-left: 90px;
+}
+
+.container .main-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    min-height: 640px;
+}
+
+
+.container .main-info .desktop-mobile{
+    width: 70vw;
+    max-width: 900px;
+    margin-right: 100px;
+}
+
+.container .main-info .info .title{
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 10px;
+  line-height: 90%;
+}
+
+
+ .container .main-info .info .p{
+   margin-bottom: 30px;
+
+}
+
+.container .main-info .info .btn {
+    background-color: white;
+    color: hsl(257, 40%, 49%);
+    font-size: 18px;
+    justify-content: center;
+    border-radius: 30px;
+    transition: 0.2s;
+    width: 200px;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.btn a {
+    text-decoration: none;
+}
+
+.btn:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+
+.footer {
+    align-content: flex-end;
+    width: 90%;
+    height: 40%;
+    display: flex;
+    justify-content: end;
+    margin: 30px 0;
+    margin-bottom: 30px;
+    align-items: center;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.footer .redes  a {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0,3s;  
+    padding: 5px; 
+    display: flex;
+}
+.footer .redes:hover{
+    color: hsl(300, 69%, 71%);
+}
