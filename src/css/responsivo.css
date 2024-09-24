@@ -1,106 +1,81 @@
-
-@media screen and (max-width: 500px) {
+/* //tablet */
+@media screen and (max-width: 1350px) {
     body{
-        background-color: hsl(257, 40%, 49%);
-        background-image: url(../images/bg-desktop.svg);
-        background-repeat: no-repeat;
-        max-width: 500vw;
-        height: 100vh;
-        background-size: cover;
-        color: white;
+       background-size: contain;
     }
-     
-    header{
-        display: flex;
-        margin-top: 25px;
-        margin: 80px;
-        justify-content: center;
+         
+    .container{
+        padding: 8rem 8rem 4rem;
+        flex-direction: column;
+    }
+    
+    .section-mobile{
         width: 100%;
     }
-    
-    .container{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .desktop-mobile{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 34px;
-        margin-left: 5px;
-    }
-    
-    .info{
-        text-align: center;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        margin: 15px;
-        width: 90%;
-        padding: 3px;
-        margin-top: 10px;
-        
-    }
-    
-    
-    .title{
-        font-size: 50px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-    }
-    
-    .subtext{
-        font-size: 40px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 700;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .text{
-        font-size: 20px;
-        font-family: "Poppins", sans-serif;
-        font-weight: 200;
-    }
-    
-    .btn{
-        background-color: white;
-        color: hsl(257, 40%, 49%);
-        font-size: 10px;
-        display: flex;
-        justify-content: center;
-        border-radius: 10px;
-        transition: 0.3s;
-        width: 20%;
-        height: 30px;
-        align-items: center;
-        text-decoration: none;
-        
-    }
-    .btn:hover{
-        background-color: hsl(300, 69%, 71%);
-    }
-    
-    .footer{
-        align-content: flex-end;
-        width: 85%;
-        height: 10%;
-        display: flex;
-        justify-content: center;
-    }
-    .redes{
-        width: 30px;
-        height: 40px;
-        display: flex;
-        justify-content: center;
-        margin-right: 30px;
-        margin-left: 40px;
-        
+
+    .section-mobile .huddle{
+        width: 240px;
     }
 
+    .section-mobile .banner{
+        margin-block: 6rem 0;
+    }
+
+    .main{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .main .info{
+        max-width: 520px;
+    }
+
+    .main .info p{
+        margin-top: 1rem;
+    }
+
+    .main:no-button{
+        width: 75%;
+    }
+
+    .main .social-media{
+        align-self: center;
+        margin-top: 10rem;
+        gap: 2rem;
+    }
+}
+
+/* mobile */
+
+@media screen and (max-width:600px){
+    body{
+        background: url(/src/images/bg-mobile.svg) no-repeat;
+        background-size: contain;
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    .container{
+        min-width: 320px;
+        padding: 4rem 3rem;
+        gap: 5rem;
+    }
+
+    .section-mobile .huddle{
+        width: 160px;
+    }
+
+    .main .info h1{
+        font-size: 2.8rem;
+        max-width: 350px;
+        margin-inline: auto;
+    }
+
+    .main .info p{
+        width: 95%;
+    }
+
+    .main .social_media a{
+        font-size: 2rem;
+    }
 }
